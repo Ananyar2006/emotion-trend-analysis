@@ -1,0 +1,6 @@
+Model,Accuracy (%),F1 Weighted (%),Train Time (s)
+XGBoost,67.93,67.66,294.7
+Logistic Regression,67.48,67.55,71.5
+MLP,66.93,66.82,31.8
+Random Forest,64.92,64.67,41.7
+SVM (RBF),48.33,49.63,162.2

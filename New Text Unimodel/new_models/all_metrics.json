@@ -1,0 +1,172 @@
+{
+  "DeBERTa-v3-small": {
+    "accuracy": 0.2471,
+    "f1_weighted": 0.0979,
+    "feature_extraction": "CLS token, disentangled attention",
+    "imbalance_handling": "Focal Loss + Weighted Sampler",
+    "num_classes": 4,
+    "classes": [
+      "Anger",
+      "Happiness",
+      "Neutral",
+      "Sadness"
+    ],
+    "classification_report": {
+      "Anger": {
+        "precision": 0.2471395881006865,
+        "recall": 1.0,
+        "f1-score": 0.3963302752293578,
+        "support": 108.0
+      },
+      "Happiness": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 58.0
+      },
+      "Neutral": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 167.0
+      },
+      "Sadness": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 104.0
+      },
+      "accuracy": 0.2471395881006865,
+      "macro avg": {
+        "precision": 0.06178489702517163,
+        "recall": 0.25,
+        "f1-score": 0.09908256880733946,
+        "support": 437.0
+      },
+      "weighted avg": {
+        "precision": 0.06107797600657699,
+        "recall": 0.2471395881006865,
+        "f1-score": 0.0979489009720152,
+        "support": 437.0
+      }
+    }
+  },
+  "BERT-BiLSTM": {
+    "accuracy": 0.6705,
+    "f1_weighted": 0.6674,
+    "feature_extraction": "All tokens \u2192 BiLSTM sequential",
+    "imbalance_handling": "Focal Loss + Weighted Sampler",
+    "num_classes": 4,
+    "classes": [
+      "Anger",
+      "Happiness",
+      "Neutral",
+      "Sadness"
+    ],
+    "classification_report": {
+      "Anger": {
+        "precision": 0.7391304347826086,
+        "recall": 0.7870370370370371,
+        "f1-score": 0.7623318385650224,
+        "support": 108.0
+      },
+      "Happiness": {
+        "precision": 0.5769230769230769,
+        "recall": 0.5172413793103449,
+        "f1-score": 0.5454545454545454,
+        "support": 58.0
+      },
+      "Neutral": {
+        "precision": 0.673469387755102,
+        "recall": 0.592814371257485,
+        "f1-score": 0.6305732484076433,
+        "support": 167.0
+      },
+      "Sadness": {
+        "precision": 0.6422764227642277,
+        "recall": 0.7596153846153846,
+        "f1-score": 0.6960352422907489,
+        "support": 104.0
+      },
+      "accuracy": 0.6704805491990846,
+      "macro avg": {
+        "precision": 0.6579498305562539,
+        "recall": 0.6641770430550629,
+        "f1-score": 0.65859871867949,
+        "support": 437.0
+      },
+      "weighted avg": {
+        "precision": 0.6694594076444895,
+        "recall": 0.6704805491990846,
+        "f1-score": 0.6674178487041198,
+        "support": 437.0
+      }
+    }
+  },
+  "RoBERTa-CNN": {
+    "accuracy": 0.6819,
+    "f1_weighted": 0.6791,
+    "feature_extraction": "All tokens \u2192 multi-scale CNN",
+    "imbalance_handling": "Focal Loss + Weighted Sampler",
+    "num_classes": 4,
+    "classes": [
+      "Anger",
+      "Happiness",
+      "Neutral",
+      "Sadness"
+    ],
+    "classification_report": {
+      "Anger": {
+        "precision": 0.7663551401869159,
+        "recall": 0.7592592592592593,
+        "f1-score": 0.7627906976744186,
+        "support": 108.0
+      },
+      "Happiness": {
+        "precision": 0.5454545454545454,
+        "recall": 0.7241379310344828,
+        "f1-score": 0.6222222222222222,
+        "support": 58.0
+      },
+      "Neutral": {
+        "precision": 0.7542372881355932,
+        "recall": 0.5329341317365269,
+        "f1-score": 0.624561403508772,
+        "support": 167.0
+      },
+      "Sadness": {
+        "precision": 0.6296296296296297,
+        "recall": 0.8173076923076923,
+        "f1-score": 0.7112970711297071,
+        "support": 104.0
+      },
+      "accuracy": 0.6819221967963387,
+      "macro avg": {
+        "precision": 0.6739191508516711,
+        "recall": 0.7084097535844904,
+        "f1-score": 0.68021784863378,
+        "support": 437.0
+      },
+      "weighted avg": {
+        "precision": 0.6998668818688241,
+        "recall": 0.6819221967963387,
+        "f1-score": 0.6790547689271866,
+        "support": 437.0
+      }
+    }
+  },
+  "DistilRoBERTa_previous": {
+    "accuracy": 0.6568,
+    "f1_weighted": 0.6528,
+    "feature_extraction": "Raw text \u2192 DistilRoBERTa fine-tune",
+    "imbalance_handling": "Focal Loss + Weighted Sampler",
+    "num_classes": 4,
+    "classes": [
+      "Anger",
+      "Happiness",
+      "Neutral",
+      "Sadness"
+    ],
+    "note": "From previous notebook"
+  }
+}
